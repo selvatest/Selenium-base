@@ -9,7 +9,7 @@ public class file {
 
 	public static  BufferedWriter ProductionTab() throws IOException
 	{
-		File f= new File("E:\\M.selva\\Output\\Production.txt");
+		File f= new File(".\\Output\\Production.txt");
 		
 		if(!f.exists())
 		{
@@ -24,7 +24,7 @@ public class file {
 	
 	public static  BufferedWriter Homepage() throws IOException
 	{
-		File f= new File("E:\\M.selva\\Output\\Homepage.txt");
+		File f= new File(".\\Output\\Homepage.txt");
 		
 		if(!f.exists())
 		{

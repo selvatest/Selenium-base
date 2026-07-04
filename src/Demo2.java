@@ -23,11 +23,11 @@ public class Demo2 {
 	
 	public static void main(String[] args) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
-//System.setProperty("webdriver.chrome.driver", "E:\\M.selva\\chromedriver.exe");
+//System.setProperty("webdriver.chrome.driver", ".\\chromedriver.exe");
    //wd=new ChromeDriver();
 		//WebDriver wd= new HtmlUnitDriver();
-		//File  f= new File("E:\\M.selva\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
-    System.setProperty("phantomjs.binary.path","E:\\M.selva\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
+		//File  f= new File(".\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
+    System.setProperty("phantomjs.binary.path",".\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
 		wd=new PhantomJSDriver();
 		wd.get("http://www.amazon.in/");
      System.out.println(wd.getTitle());
@@ -40,7 +40,7 @@ public class Demo2 {
     public void screenshot(String name) throws IOException
     {
      File src=((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
-     FileUtils.copyFile(src, new File("E:\\M.selva\\"+name+".jpg"));
+     FileUtils.copyFile(src, new File(".\\"+name+".jpg"));
     }
      
 
@@ -119,7 +119,7 @@ public class Demo2 {
      a.accept();//ok
     // a.dismiss();//cancel
 */
-     /*System.setProperty("webdriver.gecko.driver", "E:\\M.selva\\geckodriver.exe");
+     /*System.setProperty("webdriver.gecko.driver", ".\\geckodriver.exe");
  	WebDriver wd = new ChromeDriver();
 
 	wd.get("http://www.w3schools.com/js/tryit.asp?filename=tryjs_alert");
@@ -179,7 +179,7 @@ public class Demo2 {
 	//wd.close();
 	wd.quit();
 	
-	/*System.setProperty("webdriver.chrome.driver", "E:\\M.selva\\chromedriver.exe");
+	/*System.setProperty("webdriver.chrome.driver", ".\\chromedriver.exe");
 			                
 			        WebDriver my = new ChromeDriver();
 			                

@@ -9,7 +9,7 @@ public class prop {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
-		FileInputStream f = new FileInputStream(new File("D:\\M.selva\\Outside-Project-master\\src\\Resources\\config.properties"));
+		FileInputStream f = new FileInputStream(new File(".\\Outside-Project-master\\src\\Resources\\config.properties"));
 		Properties p= new Properties();
 		p.load(f);
 		System.out.println(p.getProperty("URL"));

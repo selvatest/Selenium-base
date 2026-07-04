@@ -49,7 +49,7 @@ public class Baseclass {
 	public void initial() throws IOException {
 
 		FileInputStream f = new FileInputStream(
-				new File("E:\\M.selva\\Outside-Project-master\\src\\Resources\\config.properties"));
+				new File(".\\Outside-Project-master\\src\\Resources\\config.properties"));
 		// new
 
 		//File("user.dir"+"\\src\\Resources\\config.properties\\locator.properties"));
@@ -58,13 +58,13 @@ public class Baseclass {
 		System.out.println(locators.getProperty("browser"));
 
 		FileInputStream f1 = new FileInputStream(
-				new File("E:\\M.selva\\Outside-Project-master\\src\\Resources\\config.properties"));
+				new File(".\\Outside-Project-master\\src\\Resources\\config.properties"));
 		// new
 		// File("user.dir"+"\\src\\Resources\\config.properties\\config.properties"));
 		config = new Properties();
 		config.load(f1);
 
-		File phantom = new File("E:\\M.selva\\Outside-Project-master\\src\\Resources\\config.properties");
+		File phantom = new File(".\\Outside-Project-master\\src\\Resources\\config.properties");
 
 		// new File("user.dir"+"\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
 
@@ -119,7 +119,7 @@ public class Baseclass {
 
 	public void screenshot(String name) throws IOException {
 		File srcfile = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(srcfile, new File("E:\\M.selva\\Outside-Project-master\\Screenshot\\" + name + ".jpg"));
+		FileUtils.copyFile(srcfile, new File(".\\Outside-Project-master\\Screenshot\\" + name + ".jpg"));
 	}
 
 	/*public void logger() {

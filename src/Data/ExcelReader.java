@@ -22,7 +22,7 @@ public class ExcelReader {
 */		public static  Object[][] singledata() throws IOException
 			//public static void main(String[] args) throws IOException 
 			{
-			FileInputStream fis = new FileInputStream("E:\\M.selva\\Outside-Project-master\\Testdata.xlsx");
+			FileInputStream fis = new FileInputStream(".\\Outside-Project-master\\Testdata.xlsx");
 			XSSFWorkbook wb =new XSSFWorkbook(fis);
 			XSSFSheet sh=wb.getSheet("data");
 			int rowcount=sh.getLastRowNum();
@@ -50,7 +50,7 @@ public class ExcelReader {
 			/*public static  Object[][] runtype() throws IOException
 			
 			{
-			FileInputStream fis = new FileInputStream("C:\\Users\\PRAKASH\\workspace\\China\\Testdata.xlsx");
+			FileInputStream fis = new FileInputStream(".\\workspace\\China\\Testdata.xlsx");
 			XSSFWorkbook wb =new XSSFWorkbook(fis);
 			XSSFSheet sh=wb.getSheet("data");
 			int rowcount=sh.getLastRowNum();

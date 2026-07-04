@@ -31,7 +31,7 @@ public WebElement View_Directory;
 
 public void Directoryoptions() throws IOException
 {
-	/*File f= new File("E:\\M.selva\\Outputfile\\ViewDirectoryTabs.txt");
+	/*File f= new File(".\\Outputfile\\ViewDirectoryTabs.txt");
 	if(!f.exists())
 			{
 		f.createNewFile();
